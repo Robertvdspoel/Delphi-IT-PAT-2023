@@ -1,0 +1,49 @@
+unit LoginHelp_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ComCtrls;
+
+type
+  TfrmLoginHelp = class(TForm)
+    lblHelp: TLabel;
+    BitBtnClose: TBitBtn;
+    redHelp: TRichEdit;
+    procedure FormActivate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmLoginHelp: TfrmLoginHelp;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmLoginHelp.FormActivate(Sender: TObject);
+begin
+//Startup
+redHelp.ReadOnly := true ;
+lblHelp.Font.Size := 25 ;
+lblHelp.Font.Color := clGreen ;
+BitBtnClose.Font.Size := 20 ;
+
+// Output
+redHelp.Font.Size := 12 ;
+redHelp.Lines.Add('Please enter your Username into the upper space provided.') ;
+redHelp.Lines.Add('After that please enter your password into to second space.')  ;
+redHelp.Lines.Add('');
+redHelp.Lines.Add('') ;
+redHelp.Lines.Add('After you have entered your credentials in wrong twice you will be prompted to go to the register page.') ;
+redHelp.Lines.Add('') ;
+redHelp.Lines.Add('') ;
+
+
+end;
+
+end.
