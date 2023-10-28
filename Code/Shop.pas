@@ -2595,6 +2595,6 @@ begin
 // Change the color of the edit back to white after an Error occures
 sedAgeRegister.Color := clWhite ;
 end;
-
+// VS Code test
 end.
 
