@@ -1,0 +1,43 @@
+unit LoginHelp_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ComCtrls;
+
+type
+  TfrmLoginHelp = class(TForm)
+    lblHelp: TLabel;
+    BitBtnClose: TBitBtn;
+    redHelp: TRichEdit;
+    procedure FormActivate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmLoginHelp: TfrmLoginHelp;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmLoginHelp.FormActivate(Sender: TObject);
+begin
+//Startup
+redHelp.ReadOnly := true ;
+lblHelp.Font.Size := 35 ;
+lblHelp.Font.Color := clGreen ;
+BitBtnClose.Font.Size := 20 ;
+
+// Output
+redHelp.Lines.Add('')
+
+
+
+end;
+
+end.
