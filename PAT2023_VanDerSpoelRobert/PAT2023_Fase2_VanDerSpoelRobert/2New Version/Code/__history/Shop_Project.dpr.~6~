@@ -1,0 +1,16 @@
+program Shop_Project;
+
+uses
+  Vcl.Forms,
+  Shop in 'Shop.pas' {frmShop},
+  frmHelp in 'frmHelp.pas' {frmHelpPage};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TfrmShop, frmShop);
+  Application.CreateForm(TfrmHelpPage, frmHelpPage);
+  Application.Run;
+end.

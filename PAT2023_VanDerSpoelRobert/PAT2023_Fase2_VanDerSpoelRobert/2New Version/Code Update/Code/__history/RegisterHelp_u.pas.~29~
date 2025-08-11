@@ -1,0 +1,63 @@
+unit RegisterHelp_u;
+
+interface
+
+uses
+  Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
+  Vcl.Controls, Vcl.Forms, Vcl.Dialogs, Vcl.StdCtrls, Vcl.Buttons, Vcl.ComCtrls;
+
+type
+  TfrmRegisterHelp = class(TForm)
+    lblHelp: TLabel;
+    redHelp: TRichEdit;
+    BitBtnClose: TBitBtn;
+    procedure FormActivate(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  frmRegisterHelp: TfrmRegisterHelp;
+
+implementation
+
+{$R *.dfm}
+
+procedure TfrmRegisterHelp.FormActivate(Sender: TObject);
+begin
+//Startup
+redHelp.Clear ;
+redHelp.ReadOnly := true ;
+lblHelp.Font.Size := 25 ;
+lblHelp.Font.Color := clGreen ;
+BitBtnClose.Font.Size := 20 ;
+
+
+// Output
+redHelp.Font.Size := 12 ;
+redHelp.Lines.Add('1. Enter Name:')  ;
+redHelp.Lines.Add('Please enter your Name next to the Enter name label.') ;
+redHelp.Lines.Add('2. Select country:') ;
+redHelp.Lines.Add('Select your country from the list by clicking on the arrow and then on your country.')  ;
+redHelp.Lines.Add('3. Enter/Select age:')  ;
+redHelp.Lines.Add('Select your Age by entering it next to age or by clicking and searching for it with the arrows ');
+redHelp.Lines.Add('4. Enter Username:')   ;
+redHelp.Lines.Add('Enter the username that you would like to use next to the Usernem label') ;
+redHelp.Lines.Add('5. Enter Password:')   ;
+redHelp.Lines.Add('Enter the password that you want to use next to the create pasword label, enter the same password into the space provided underneath next to the test password label to confirm it.') ;
+redHelp.Lines.Add('6. Checknox:') ;
+redHelp.Lines.Add('Click on the box to continue to the next step') ;
+redHelp.Lines.Add('7. Create Account:')  ;
+redHelp.Lines.Add('Click the Create account button to create your account.') ;
+redHelp.Lines.Add('')  ;
+redHelp.Lines.Add('Name Should be at least 2 characters long.'+#13+'You should be between 18 and 100 years old.'+#13+'Username should be between 5 and 15 charaters long.'+#13+'Password should be between 5 and 15 charaters long.') ;
+
+redHelp.SelStart := 0;     // Set the cursor position to the beginning of the text.
+redHelp.SelLength := 0;    // Set the cursor selection length to 0.
+
+
+end;
+
+end.

@@ -1,0 +1,64 @@
+Startup
+
+
+the Icon file must be but in the same place as the .exe file
+
+
+
+
+
+
+
+
+
+
+code :
+if not frmLoginPage.bTabVisible then
+  begin
+    TabSheetLogin.TabVisible := False;
+  //    TabSheetOperator.TabVisible := False;
+  end
+  else
+  begin
+    TabSheetLogin.TabVisible := True;
+  //    TabSheetOperator.TabVisible := True;
+  end;
+
+
+
+{ else
+    if cmbFPScpu.ItemIndex = 1 then
+    begin
+    sCPU := 'W' ;
+      if cmbFPSgpu.ItemIndex = 0 then
+      begin
+      sGPU := 'A' ;
+      end
+      else
+      if cmbFPSgpu.ItemIndex = 1 then
+      begin
+        sGPU := 'S' ;
+      end;
+
+      if cmbFPSram.ItemIndex = 0 then
+      begin
+      sRAM := 'Z' ;
+      end
+      else
+      if cmbFPSram.ItemIndex = 1 then
+      begin
+      sRam := 'X' ;
+      end;
+
+      if cmbFPSgame .ItemIndex = 0 then
+      begin
+      sGame := 'P' ;
+      end
+      else
+      if cmbFPSgame.ItemIndex = 1 then
+      begin
+        sGame := 'O' ;
+      end;
+
+    end;      }
+

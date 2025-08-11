@@ -1,0 +1,14 @@
+Price : 25448
+
+
+Admin/Customer  2 	A..Z 	5 	A1..100Z 	4 	A..Z 	48 	Delevery/Pickup 
+		p1	r1	p2	r2+i1+r3	p3	r4	p4..
+
+
+
+
+Admin#nsa35
+CircuitCentral#!
+
+
+Robert#tsa16	Drakensberg123!

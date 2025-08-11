@@ -4,7 +4,7 @@ This Text File contains information on how to log into my program:
 Log in as an ADMIN:
 Username:Admin#nsa35
 Password:CircuitCentral#!
-Admin code:A1234DF
+Admin code:A123DF
 
 Log in as a CUSTOMER:
 Username:Robert#tsa16
